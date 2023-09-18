@@ -1,61 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render App component 1`] = `
+exports[`should render Navbar component 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="row g-0"
+      <nav
+        class="bg-body-secondary navbar navbar-expand navbar-light"
       >
         <div
-          class="col-md-12"
+          class="justify-content-center container"
         >
-          <nav
-            class="bg-body-secondary navbar navbar-expand navbar-light"
+          <span
+            class="navbar-brand"
           >
-            <div
-              class="justify-content-center container"
-            >
-              <span
-                class="navbar-brand"
-              >
-                <img
-                  class="rounded border logo"
-                  src="tensorflowjs.png"
-                />
-              </span>
-            </div>
-          </nav>
+            <img
+              class="rounded border logo"
+              src="tensorflowjs.png"
+            />
+          </span>
         </div>
-      </div>
+      </nav>
     </div>
   </body>,
   "container": <div>
-    <div
-      class="row g-0"
+    <nav
+      class="bg-body-secondary navbar navbar-expand navbar-light"
     >
       <div
-        class="col-md-12"
+        class="justify-content-center container"
       >
-        <nav
-          class="bg-body-secondary navbar navbar-expand navbar-light"
+        <span
+          class="navbar-brand"
         >
-          <div
-            class="justify-content-center container"
-          >
-            <span
-              class="navbar-brand"
-            >
-              <img
-                class="rounded border logo"
-                src="tensorflowjs.png"
-              />
-            </span>
-          </div>
-        </nav>
+          <img
+            class="rounded border logo"
+            src="tensorflowjs.png"
+          />
+        </span>
       </div>
-    </div>
+    </nav>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

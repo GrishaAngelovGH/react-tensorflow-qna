@@ -1,8 +1,10 @@
+import Navbar from "components/Navbar"
+
 function App() {
   return (
     <div className="row g-0">
       <div className="col-md-12">
-        App
+        <Navbar />
       </div>
     </div>
   );
