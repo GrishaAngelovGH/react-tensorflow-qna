@@ -1,4 +1,13 @@
+.main-navbar {
+  height: 100px;
+}
+
 .logo {
-  min-height: 10vh;
   max-height: 10vh;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .logo {
+    max-height: 5vh;
+  }
 }
