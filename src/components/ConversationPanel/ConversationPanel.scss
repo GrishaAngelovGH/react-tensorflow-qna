@@ -1,0 +1,12 @@
+.conversation-panel {
+  display: flex;
+  height: calc(100vh - 100px);
+}
+
+.left-col {
+  width: 70%;
+}
+
+.right-col {
+  width: 30%;
+}

@@ -1,87 +1,39 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render App component 1`] = `
+exports[`should render ConversationPanel component 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="row g-0"
+        class="conversation-panel"
       >
         <div
-          class="col-md-12"
+          class="left-col"
         >
-          <nav
-            class="bg-body-secondary main-navbar navbar navbar-expand navbar-light"
-          >
-            <div
-              class="justify-content-center container"
-            >
-              <span
-                class="navbar-brand"
-              >
-                <img
-                  class="rounded border logo"
-                  src="tensorflowjs.png"
-                />
-              </span>
-            </div>
-          </nav>
-          <div
-            class="conversation-panel"
-          >
-            <div
-              class="left-col"
-            >
-              Left Column
-            </div>
-            <div
-              class="right-col"
-            >
-              Right Column
-            </div>
-          </div>
+          Left Column
+        </div>
+        <div
+          class="right-col"
+        >
+          Right Column
         </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="row g-0"
+      class="conversation-panel"
     >
       <div
-        class="col-md-12"
+        class="left-col"
       >
-        <nav
-          class="bg-body-secondary main-navbar navbar navbar-expand navbar-light"
-        >
-          <div
-            class="justify-content-center container"
-          >
-            <span
-              class="navbar-brand"
-            >
-              <img
-                class="rounded border logo"
-                src="tensorflowjs.png"
-              />
-            </span>
-          </div>
-        </nav>
-        <div
-          class="conversation-panel"
-        >
-          <div
-            class="left-col"
-          >
-            Left Column
-          </div>
-          <div
-            class="right-col"
-          >
-            Right Column
-          </div>
-        </div>
+        Left Column
+      </div>
+      <div
+        class="right-col"
+      >
+        Right Column
       </div>
     </div>
   </div>,
