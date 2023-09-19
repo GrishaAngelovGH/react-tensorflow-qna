@@ -36,9 +36,12 @@ Object {
               Left Column
             </div>
             <div
-              class="right-col"
+              class="right-col m-2"
             >
-              Right Column
+              <textarea
+                class="h-100 form-control"
+                disabled=""
+              />
             </div>
           </div>
         </div>
@@ -77,9 +80,12 @@ Object {
             Left Column
           </div>
           <div
-            class="right-col"
+            class="right-col m-2"
           >
-            Right Column
+            <textarea
+              class="h-100 form-control"
+              disabled=""
+            />
           </div>
         </div>
       </div>
