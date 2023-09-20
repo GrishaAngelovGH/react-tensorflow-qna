@@ -1,4 +1,5 @@
 import Form from "react-bootstrap/Form"
+import InteractivePanel from "./InteractivePanel"
 
 import useFile from "hooks/useFile"
 
@@ -9,7 +10,9 @@ const ConversationPanel = () => {
 
   return (
     <div className="conversation-panel">
-      <div className="left-col">Left Column</div>
+      <div className="left-col">
+        <InteractivePanel />
+      </div>
       <div className="right-col m-2">
         <Form.Control
           as="textarea"

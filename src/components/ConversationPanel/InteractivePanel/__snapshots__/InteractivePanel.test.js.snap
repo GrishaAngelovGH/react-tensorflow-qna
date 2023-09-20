@@ -1,109 +1,77 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render ConversationPanel component 1`] = `
+exports[`should render InteractivePanel component 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="conversation-panel"
+        class="row fixed-bottom ps-2"
       >
         <div
-          class="left-col"
+          class="col-8 col-md-4 col-lg-5"
         >
           <div
-            class="row fixed-bottom ps-2"
+            class="mb-3 input-group"
           >
-            <div
-              class="col-8 col-md-4 col-lg-5"
-            >
-              <div
-                class="mb-3 input-group"
-              >
-                <input
-                  class="border-primary form-control"
-                  placeholder="Ask a question"
-                />
-                <button
-                  class="btn btn-primary bi bi-send"
-                  type="button"
-                />
-              </div>
-            </div>
-            <div
-              class="col-8 col-md-3 col-lg-5"
-            >
-              <div
-                class="btn-group"
-                role="group"
-              >
-                <button
-                  class="btn btn-outline-success bi bi-layout-sidebar-reverse"
-                  type="button"
-                />
-              </div>
-            </div>
+            <input
+              class="border-primary form-control"
+              placeholder="Ask a question"
+            />
+            <button
+              class="btn btn-primary bi bi-send"
+              type="button"
+            />
           </div>
         </div>
         <div
-          class="right-col m-2"
+          class="col-8 col-md-3 col-lg-5"
         >
-          <textarea
-            class="h-100 form-control"
-            disabled=""
-          />
+          <div
+            class="btn-group"
+            role="group"
+          >
+            <button
+              class="btn btn-outline-success bi bi-layout-sidebar-reverse"
+              type="button"
+            />
+          </div>
         </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="conversation-panel"
+      class="row fixed-bottom ps-2"
     >
       <div
-        class="left-col"
+        class="col-8 col-md-4 col-lg-5"
       >
         <div
-          class="row fixed-bottom ps-2"
+          class="mb-3 input-group"
         >
-          <div
-            class="col-8 col-md-4 col-lg-5"
-          >
-            <div
-              class="mb-3 input-group"
-            >
-              <input
-                class="border-primary form-control"
-                placeholder="Ask a question"
-              />
-              <button
-                class="btn btn-primary bi bi-send"
-                type="button"
-              />
-            </div>
-          </div>
-          <div
-            class="col-8 col-md-3 col-lg-5"
-          >
-            <div
-              class="btn-group"
-              role="group"
-            >
-              <button
-                class="btn btn-outline-success bi bi-layout-sidebar-reverse"
-                type="button"
-              />
-            </div>
-          </div>
+          <input
+            class="border-primary form-control"
+            placeholder="Ask a question"
+          />
+          <button
+            class="btn btn-primary bi bi-send"
+            type="button"
+          />
         </div>
       </div>
       <div
-        class="right-col m-2"
+        class="col-8 col-md-3 col-lg-5"
       >
-        <textarea
-          class="h-100 form-control"
-          disabled=""
-        />
+        <div
+          class="btn-group"
+          role="group"
+        >
+          <button
+            class="btn btn-outline-success bi bi-layout-sidebar-reverse"
+            type="button"
+          />
+        </div>
       </div>
     </div>
   </div>,
