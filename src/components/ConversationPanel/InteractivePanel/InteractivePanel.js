@@ -3,7 +3,7 @@ import Form from "react-bootstrap/Form"
 import InputGroup from "react-bootstrap/InputGroup"
 import ButtonGroup from "react-bootstrap/ButtonGroup"
 
-const InteractivePanel = () => {
+const InteractivePanel = ({ onToggleSidebar }) => {
   return (
     <div className="row fixed-bottom ps-2">
       <div className="col-8 col-md-4 col-lg-5">
@@ -17,7 +17,10 @@ const InteractivePanel = () => {
       </div>
       <div className="col-8 col-md-3 col-lg-5">
         <ButtonGroup>
-          <Button variant="outline-success bi bi-layout-sidebar-reverse"></Button>
+          <Button
+            variant="outline-success bi bi-layout-sidebar-reverse"
+            onClick={onToggleSidebar}>
+          </Button>
         </ButtonGroup>
       </div>
     </div>
