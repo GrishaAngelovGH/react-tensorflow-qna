@@ -17,6 +17,7 @@ Object {
             <input
               class="border-primary form-control"
               placeholder="Ask a question"
+              value=""
             />
             <button
               class="btn btn-primary bi bi-send"
@@ -53,6 +54,7 @@ Object {
           <input
             class="border-primary form-control"
             placeholder="Ask a question"
+            value=""
           />
           <button
             class="btn btn-primary bi bi-send"

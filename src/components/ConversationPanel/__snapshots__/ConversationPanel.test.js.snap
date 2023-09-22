@@ -11,6 +11,10 @@ Object {
         <div
           class="left-col"
         >
+          <h1>
+            Received answers: 
+            0
+          </h1>
           <div
             class="row fixed-bottom ps-2"
           >
@@ -23,6 +27,7 @@ Object {
                 <input
                   class="border-primary form-control"
                   placeholder="Ask a question"
+                  value=""
                 />
                 <button
                   class="btn btn-primary bi bi-send"
@@ -63,6 +68,10 @@ Object {
       <div
         class="left-col"
       >
+        <h1>
+          Received answers: 
+          0
+        </h1>
         <div
           class="row fixed-bottom ps-2"
         >
@@ -75,6 +84,7 @@ Object {
               <input
                 class="border-primary form-control"
                 placeholder="Ask a question"
+                value=""
               />
               <button
                 class="btn btn-primary bi bi-send"
