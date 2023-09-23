@@ -4,6 +4,7 @@ import useProcessQuestion from "hooks/useProcessQuestion"
 
 import Form from "react-bootstrap/Form"
 import InteractivePanel from "./InteractivePanel"
+import Conversation from "./Conversation"
 
 import "./ConversationPanel.scss"
 
@@ -11,7 +12,7 @@ const ConversationPanel = () => {
   const [showSidebar, setShowSidebar] = useState(true)
   const [question, setQuestion] = useState('')
   const fileContent = useFile()
-  const answers = useProcessQuestion(question, fileContent)
+  const [answers, isProcessing] = useProcessQuestion(question, fileContent)
 
   const handleToggleSidebar = () => {
     setShowSidebar(!showSidebar)
@@ -20,7 +21,12 @@ const ConversationPanel = () => {
   return (
     <div className="conversation-panel">
       <div className="left-col">
-        <h1>Received answers: {answers.length}</h1>
+        {
+          question.length > 0 && (
+            <Conversation question={question} answers={answers} isProcessing={isProcessing} />
+          )
+        }
+
         <InteractivePanel
           onSendQuestion={setQuestion}
           onToggleSidebar={handleToggleSidebar}

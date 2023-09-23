@@ -33,10 +33,6 @@ Object {
             <div
               class="left-col"
             >
-              <h1>
-                Received answers: 
-                0
-              </h1>
               <div
                 class="row fixed-bottom ps-2"
               >
@@ -114,10 +110,6 @@ Object {
           <div
             class="left-col"
           >
-            <h1>
-              Received answers: 
-              0
-            </h1>
             <div
               class="row fixed-bottom ps-2"
             >
