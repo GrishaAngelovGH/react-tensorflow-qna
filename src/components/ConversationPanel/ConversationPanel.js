@@ -1,21 +1,31 @@
 import { useState } from "react"
+
 import useFile from "hooks/useFile"
 import useProcessQuestion from "hooks/useProcessQuestion"
 
 import Form from "react-bootstrap/Form"
-import InteractivePanel from "./InteractivePanel"
 import Conversation from "./Conversation"
+import InteractivePanel from "./InteractivePanel"
+import Questions from "./Questions"
 
 import "./ConversationPanel.scss"
 
 const ConversationPanel = () => {
-  const [showSidebar, setShowSidebar] = useState(true)
+  const [showFileContent, setShowFileContent] = useState(true)
+  const [showQuestions, setShowQuestions] = useState(false)
   const [question, setQuestion] = useState('')
+
   const fileContent = useFile()
   const [answers, isProcessing] = useProcessQuestion(question, fileContent)
 
-  const handleToggleSidebar = () => {
-    setShowSidebar(!showSidebar)
+  const handleToggleFileContent = () => {
+    setShowFileContent(!showFileContent)
+    setShowQuestions(false)
+  }
+
+  const handleToggleQuestions = () => {
+    setShowQuestions(!showQuestions)
+    setShowFileContent(false)
   }
 
   return (
@@ -29,21 +39,28 @@ const ConversationPanel = () => {
 
         <InteractivePanel
           onSendQuestion={setQuestion}
-          onToggleSidebar={handleToggleSidebar}
+          onToggleFileContent={handleToggleFileContent}
+          onToggleQuestions={handleToggleQuestions}
         />
       </div>
-      {
-        showSidebar && (
-          <div className="right-col m-2">
+
+      <div className="right-col m-2">
+        {
+          showFileContent && (
             <Form.Control
               as="textarea"
               defaultValue={fileContent}
               disabled
               className="h-100"
             />
-          </div>
-        )
-      }
+          )
+        }
+        {
+          showQuestions && (
+            <Questions onClick={setQuestion} />
+          )
+        }
+      </div>
     </div>
   )
 }

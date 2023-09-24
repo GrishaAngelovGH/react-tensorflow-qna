@@ -5,7 +5,7 @@ import Form from "react-bootstrap/Form"
 import InputGroup from "react-bootstrap/InputGroup"
 import ButtonGroup from "react-bootstrap/ButtonGroup"
 
-const InteractivePanel = ({ onToggleSidebar, onSendQuestion }) => {
+const InteractivePanel = ({ onToggleFileContent, onToggleQuestions, onSendQuestion }) => {
   const [value, setValue] = useState('')
 
   const handleInputChange = ({ target }) => {
@@ -34,7 +34,11 @@ const InteractivePanel = ({ onToggleSidebar, onSendQuestion }) => {
         <ButtonGroup>
           <Button
             variant="outline-success bi bi-layout-sidebar-reverse"
-            onClick={onToggleSidebar}>
+            onClick={onToggleFileContent}>
+          </Button>
+          <Button
+            variant="outline-success bi bi-list"
+            onClick={onToggleQuestions}>
           </Button>
         </ButtonGroup>
       </div>

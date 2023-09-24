@@ -42,6 +42,10 @@ Object {
                   class="btn btn-outline-success bi bi-layout-sidebar-reverse"
                   type="button"
                 />
+                <button
+                  class="btn btn-outline-success bi bi-list"
+                  type="button"
+                />
               </div>
             </div>
           </div>
@@ -93,6 +97,10 @@ Object {
             >
               <button
                 class="btn btn-outline-success bi bi-layout-sidebar-reverse"
+                type="button"
+              />
+              <button
+                class="btn btn-outline-success bi bi-list"
                 type="button"
               />
             </div>
