@@ -16,7 +16,7 @@ const ConversationPanel = () => {
   const [question, setQuestion] = useState('')
 
   const fileContent = useFile()
-  const [answers, isProcessing] = useProcessQuestion(question, fileContent)
+  const [answer, isProcessing] = useProcessQuestion(question, fileContent)
 
   const handleToggleFileContent = () => {
     setShowFileContent(!showFileContent)
@@ -33,7 +33,7 @@ const ConversationPanel = () => {
       <div className="left-col">
         {
           question.length > 0 && (
-            <Conversation question={question} answers={answers} isProcessing={isProcessing} />
+            <Conversation question={question} answer={answer} isProcessing={isProcessing} />
           )
         }
 

@@ -12,18 +12,20 @@ Object {
           class="col-8 col-md-10 border rounded p-2"
         >
           <h3
-            class="bg-primary text-white p-1 rounded"
+            class="bg-primary text-white p-1 rounded text-capitalize"
           >
             <i
               class="bi bi-person-workspace mx-2"
             />
-             
             question
           </h3>
           <h3
-            class="bg-secondary text-white p-1 rounded"
+            class="bg-success text-white p-1 rounded text-capitalize"
           >
-            Answer: answer
+            <i
+              class="bi bi-info-circle mx-2"
+            />
+            Could not find the answer for this question
           </h3>
         </div>
       </div>
@@ -37,18 +39,20 @@ Object {
         class="col-8 col-md-10 border rounded p-2"
       >
         <h3
-          class="bg-primary text-white p-1 rounded"
+          class="bg-primary text-white p-1 rounded text-capitalize"
         >
           <i
             class="bi bi-person-workspace mx-2"
           />
-           
           question
         </h3>
         <h3
-          class="bg-secondary text-white p-1 rounded"
+          class="bg-success text-white p-1 rounded text-capitalize"
         >
-          Answer: answer
+          <i
+            class="bi bi-info-circle mx-2"
+          />
+          Could not find the answer for this question
         </h3>
       </div>
     </div>
@@ -119,12 +123,11 @@ Object {
           class="col-8 col-md-10 border rounded p-2"
         >
           <h3
-            class="bg-primary text-white p-1 rounded"
+            class="bg-primary text-white p-1 rounded text-capitalize"
           >
             <i
               class="bi bi-person-workspace mx-2"
             />
-             
             question
           </h3>
           <div
@@ -149,12 +152,11 @@ Object {
         class="col-8 col-md-10 border rounded p-2"
       >
         <h3
-          class="bg-primary text-white p-1 rounded"
+          class="bg-primary text-white p-1 rounded text-capitalize"
         >
           <i
             class="bi bi-person-workspace mx-2"
           />
-           
           question
         </h3>
         <div
@@ -236,17 +238,19 @@ Object {
           class="col-8 col-md-10 border rounded p-2"
         >
           <h3
-            class="bg-primary text-white p-1 rounded"
+            class="bg-primary text-white p-1 rounded text-capitalize"
           >
             <i
               class="bi bi-person-workspace mx-2"
             />
-             
             question
           </h3>
           <h3
-            class="bg-secondary text-white p-1 rounded"
+            class="bg-success text-white p-1 rounded text-capitalize"
           >
+            <i
+              class="bi bi-info-circle mx-2"
+            />
             Could not find the answer for this question
           </h3>
         </div>
@@ -261,17 +265,19 @@ Object {
         class="col-8 col-md-10 border rounded p-2"
       >
         <h3
-          class="bg-primary text-white p-1 rounded"
+          class="bg-primary text-white p-1 rounded text-capitalize"
         >
           <i
             class="bi bi-person-workspace mx-2"
           />
-           
           question
         </h3>
         <h3
-          class="bg-secondary text-white p-1 rounded"
+          class="bg-success text-white p-1 rounded text-capitalize"
         >
+          <i
+            class="bi bi-info-circle mx-2"
+          />
           Could not find the answer for this question
         </h3>
       </div>

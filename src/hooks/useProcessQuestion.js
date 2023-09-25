@@ -4,7 +4,7 @@ import { tidy } from "@tensorflow/tfjs"
 import * as qna from "@tensorflow-models/qna"
 
 const useProcessQuestion = (question, fileContent) => {
-  const [answers, setAnswers] = useState([])
+  const [answer, setAnswer] = useState({})
   const [isProcessing, setIsProcessing] = useState(true)
 
   useEffect(() => {
@@ -13,7 +13,7 @@ const useProcessQuestion = (question, fileContent) => {
         setIsProcessing(true)
         const model = await qna.load()
         const receivedAnswers = await model.findAnswers(question, fileContent.replaceAll("\n", ""))
-        setAnswers(receivedAnswers)
+        setAnswer(receivedAnswers[0])
         setIsProcessing(false)
       } catch (err) {
         console.log(err)
@@ -25,7 +25,7 @@ const useProcessQuestion = (question, fileContent) => {
     })
   }, [question, fileContent])
 
-  return [answers, isProcessing]
+  return [answer, isProcessing]
 }
 
 export default useProcessQuestion
