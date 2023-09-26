@@ -34,7 +34,7 @@ Object {
               class="left-col"
             >
               <div
-                class="row fixed-bottom ps-2"
+                class="row justify-content-center fixed-bottom ps-2"
               >
                 <div
                   class="col-8 col-md-4 col-lg-5"
@@ -115,7 +115,7 @@ Object {
             class="left-col"
           >
             <div
-              class="row fixed-bottom ps-2"
+              class="row justify-content-center fixed-bottom ps-2"
             >
               <div
                 class="col-8 col-md-4 col-lg-5"

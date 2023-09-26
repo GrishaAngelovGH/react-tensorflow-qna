@@ -18,7 +18,7 @@ const InteractivePanel = ({ onToggleFileContent, onToggleQuestions, onSendQuesti
   }
 
   return (
-    <div className="row fixed-bottom ps-2">
+    <div className="row justify-content-center fixed-bottom ps-2">
       <div className="col-8 col-md-4 col-lg-5">
         <InputGroup className="mb-3">
           <Form.Control
