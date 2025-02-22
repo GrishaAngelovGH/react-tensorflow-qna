@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect, useRef } from "react"
 
 import useFile from "hooks/useFile"
 import useProcessQuestion from "hooks/useProcessQuestion"
@@ -14,9 +14,12 @@ const ConversationPanel = () => {
   const [showFileContent, setShowFileContent] = useState(true)
   const [showQuestions, setShowQuestions] = useState(false)
   const [question, setQuestion] = useState('')
+  const [conversation, setConversation] = useState([])
 
   const fileContent = useFile()
-  const [answer, isProcessing] = useProcessQuestion(question, fileContent)
+  const [answer, isProcessing, clearAnswer] = useProcessQuestion(question, fileContent)
+
+  const scrollRef = useRef()
 
   const handleToggleFileContent = () => {
     setShowFileContent(!showFileContent)
@@ -28,14 +31,36 @@ const ConversationPanel = () => {
     setShowFileContent(false)
   }
 
+  useEffect(() => {
+    if (answer?.text) {
+      setConversation([
+        ...conversation,
+        { id: conversation.length + 1, question, answer, isProcessing }
+      ])
+      clearAnswer()
+      scrollRef?.current?.scrollIntoView({ behavior: "smooth" })
+    }
+  }, [conversation, question, answer, isProcessing, clearAnswer])
+
+  useEffect(() => {
+    isProcessing && scrollRef?.current?.scrollIntoView({ behavior: "smooth" })
+  }, [isProcessing])
+
   return (
     <div className="conversation-panel">
       <div className="left-col">
-        {
-          question.length > 0 && (
-            <Conversation question={question} answer={answer} isProcessing={isProcessing} />
-          )
-        }
+        <div className="conversation overflow-auto">
+          {
+            conversation.map(v => (
+              <Conversation key={v.id} ref={scrollRef} {...v} />
+            ))
+          }
+          {
+            question.length > 0 && isProcessing && (
+              <Conversation ref={scrollRef} question={question} answer={answer} isProcessing={isProcessing} />
+            )
+          }
+        </div>
 
         <InteractivePanel
           onSendQuestion={setQuestion}

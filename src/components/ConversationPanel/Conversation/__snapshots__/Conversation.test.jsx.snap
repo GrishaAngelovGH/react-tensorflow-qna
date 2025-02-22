@@ -6,7 +6,7 @@ exports[`should render Conversation component 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="row justify-content-center mt-3"
+        class="row justify-content-center mt-3 m-0"
       >
         <div
           class="col-8 col-md-10 border rounded p-2"
@@ -33,7 +33,7 @@ exports[`should render Conversation component 1`] = `
   </body>,
   "container": <div>
     <div
-      class="row justify-content-center mt-3"
+      class="row justify-content-center mt-3 m-0"
     >
       <div
         class="col-8 col-md-10 border rounded p-2"
@@ -117,7 +117,7 @@ exports[`should render Conversation component processing question 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="row justify-content-center mt-3"
+        class="row justify-content-center mt-3 m-0"
       >
         <div
           class="col-8 col-md-10 border rounded p-2"
@@ -146,7 +146,7 @@ exports[`should render Conversation component processing question 1`] = `
   </body>,
   "container": <div>
     <div
-      class="row justify-content-center mt-3"
+      class="row justify-content-center mt-3 m-0"
     >
       <div
         class="col-8 col-md-10 border rounded p-2"
@@ -232,7 +232,7 @@ exports[`should render Conversation component without answers 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="row justify-content-center mt-3"
+        class="row justify-content-center mt-3 m-0"
       >
         <div
           class="col-8 col-md-10 border rounded p-2"
@@ -259,7 +259,7 @@ exports[`should render Conversation component without answers 1`] = `
   </body>,
   "container": <div>
     <div
-      class="row justify-content-center mt-3"
+      class="row justify-content-center mt-3 m-0"
     >
       <div
         class="col-8 col-md-10 border rounded p-2"

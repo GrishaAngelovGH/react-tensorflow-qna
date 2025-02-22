@@ -34,6 +34,9 @@ exports[`should render App component 1`] = `
               class="left-col"
             >
               <div
+                class="conversation overflow-auto"
+              />
+              <div
                 class="row justify-content-center fixed-bottom ps-2"
               >
                 <div
@@ -116,6 +119,9 @@ exports[`should render App component 1`] = `
           <div
             class="left-col"
           >
+            <div
+              class="conversation overflow-auto"
+            />
             <div
               class="row justify-content-center fixed-bottom ps-2"
             >

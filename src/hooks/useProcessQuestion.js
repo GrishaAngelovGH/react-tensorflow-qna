@@ -7,6 +7,8 @@ const useProcessQuestion = (question, fileContent) => {
   const [answer, setAnswer] = useState({})
   const [isProcessing, setIsProcessing] = useState(true)
 
+  const clearAnswer = () => setAnswer({})
+
   useEffect(() => {
     const process = async () => {
       try {
@@ -25,7 +27,7 @@ const useProcessQuestion = (question, fileContent) => {
     })
   }, [question, fileContent])
 
-  return [answer, isProcessing]
+  return [answer, isProcessing, clearAnswer]
 }
 
 export default useProcessQuestion
