@@ -1,45 +1,27 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`should render Navbar component 1`] = `
-Object {
+exports[`should render Question component 1`] = `
+{
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <nav
-        class="bg-body-secondary main-navbar navbar navbar-expand navbar-light"
+      <h3
+        class="bg-primary text-white p-1 rounded text-capitalize"
       >
-        <div
-          class="justify-content-center container"
-        >
-          <span
-            class="navbar-brand"
-          >
-            <img
-              class="rounded border logo"
-              src="tensorflowjs.png"
-            />
-          </span>
-        </div>
-      </nav>
+        <i
+          class="bi bi-person-workspace mx-2"
+        />
+      </h3>
     </div>
   </body>,
   "container": <div>
-    <nav
-      class="bg-body-secondary main-navbar navbar navbar-expand navbar-light"
+    <h3
+      class="bg-primary text-white p-1 rounded text-capitalize"
     >
-      <div
-        class="justify-content-center container"
-      >
-        <span
-          class="navbar-brand"
-        >
-          <img
-            class="rounded border logo"
-            src="tensorflowjs.png"
-          />
-        </span>
-      </div>
-    </nav>
+      <i
+        class="bi bi-person-workspace mx-2"
+      />
+    </h3>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

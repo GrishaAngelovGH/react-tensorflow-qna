@@ -1,7 +1,7 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`should render Answer component 1`] = `
-Object {
+{
   "asFragment": [Function],
   "baseElement": <body>
     <div>
@@ -80,7 +80,7 @@ Object {
 `;
 
 exports[`should render Answer component without content 1`] = `
-Object {
+{
   "asFragment": [Function],
   "baseElement": <body>
     <div>
